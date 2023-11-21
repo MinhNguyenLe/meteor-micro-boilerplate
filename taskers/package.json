@@ -1,0 +1,13 @@
+{
+  "name": "taskers",
+  "private": true,
+  "scripts": {
+    "dev": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "meteor-node-stubs": "^1.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

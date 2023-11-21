@@ -1,0 +1,11 @@
+{
+  "name": "services",
+  "private": true,
+  "scripts": {
+    "dev": "meteor run --port=4000"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "meteor-node-stubs": "^1.2.1"
+  }
+}
