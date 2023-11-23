@@ -1,8 +1,7 @@
 // @ts-nocheck
 import React from "react";
 import { DDP } from "meteor/ddp-client";
-import { BaseTable, HelloWorld } from "btaskee-ui-be";
-// import { HelloWorld } from "otorio-components";
+import { BaseTable } from "btaskee-ui-be";
 
 // const serviceConnection = DDP.connect('http://localhost:4000');
 const authConnection = DDP.connect("http://localhost:3000");
@@ -44,6 +43,39 @@ const App = () => {
     Meteor.logout();
   };
 
+  const dataSource = [
+    {
+      key: "1",
+      name: "Mike",
+      age: 32,
+      address: "10 Downing Street",
+    },
+    {
+      key: "2",
+      name: "John",
+      age: 42,
+      address: "10 Downing Street",
+    },
+  ];
+
+  const columns = [
+    {
+      title: "Name",
+      dataIndex: "name",
+      key: "name",
+    },
+    {
+      title: "Age",
+      dataIndex: "age",
+      key: "age",
+    },
+    {
+      title: "Address",
+      dataIndex: "address",
+      key: "address",
+    },
+  ];
+
   return (
     <div>
       I am Askers!
@@ -53,8 +85,7 @@ const App = () => {
       <button onClick={login}>Sign in</button>
       <button onClick={checkLoggedIn}>Check logged in ?</button>
       <button onClick={logout}>Log out</button>
-      <HelloWorld />
-      <BaseTable />
+      <BaseTable dataSource={dataSource} columns={columns} />
     </div>
   );
 };

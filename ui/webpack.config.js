@@ -32,7 +32,7 @@ const config = {
             {
                 test: /\.css$/i,
                 use: [
-                    'style-loader', 
+                    'style-loader',
                     'css-loader',
                     //  'postcss-loader'
                 ],

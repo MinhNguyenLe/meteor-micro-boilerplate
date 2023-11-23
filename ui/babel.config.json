@@ -16,5 +16,16 @@
     ],
     "@babel/preset-typescript"
   ],
-  "plugins": [["import", { "libraryName": "antd", "style": "css" }]]
+  "plugins": [
+    ["import", { "libraryName": "antd", "style": "css" }],
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@app": "./src"
+        }
+      }
+    ]
+  ]
 }
