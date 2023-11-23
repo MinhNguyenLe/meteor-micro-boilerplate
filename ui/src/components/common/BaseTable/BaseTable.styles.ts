@@ -1,11 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { Table as AntdTable, TableProps } from "antd";
-import { FONT_SIZE } from "../../styles/themes/constants";
+import styled from 'styled-components';
+import { Table as AntdTable } from 'antd';
+import { FONT_SIZE } from '@app/styles/themes/constants';
 
-export type BaseTableProps<T> = TableProps<T>;
-
-const Table: any = styled(AntdTable)`
+export const Table = styled(AntdTable)`
   & thead .ant-table-cell {
     color: var(--primary-color);
     font-size: ${FONT_SIZE.xs};
@@ -33,9 +30,7 @@ const Table: any = styled(AntdTable)`
   &
     .ant-table-thead
     > tr
-    > th:not(:last-child):not(.ant-table-selection-column):not(
-      .ant-table-row-expand-icon-cell
-    ):not([colspan])::before {
+    > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
     background-color: var(--primary-color);
   }
 
@@ -91,44 +86,3 @@ const Table: any = styled(AntdTable)`
     }
   }
 `;
-
-const BaseTable: React.FC<BaseTableProps<any>> = (props) => {
-  return (
-    <Table
-      dataSource={[
-        {
-          key: "1",
-          name: "Mike",
-          age: 32,
-          address: "10 Downing Street",
-        },
-        {
-          key: "2",
-          name: "John",
-          age: 42,
-          address: "10 Downing Street",
-        },
-      ]}
-      columns={[
-        {
-          title: "Name",
-          dataIndex: "name",
-          key: "name",
-        },
-        {
-          title: "Age",
-          dataIndex: "age",
-          key: "age",
-        },
-        {
-          title: "Address",
-          dataIndex: "address",
-          key: "address",
-        },
-      ]}
-      {...props}
-    />
-  );
-};
-
-export default BaseTable;
