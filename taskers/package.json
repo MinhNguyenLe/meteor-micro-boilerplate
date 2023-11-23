@@ -2,7 +2,7 @@
   "name": "taskers",
   "private": true,
   "scripts": {
-    "dev": "meteor run"
+    "dev": "meteor run --port=5000"
   },
   "dependencies": {
     "@babel/runtime": "^7.17.9",
