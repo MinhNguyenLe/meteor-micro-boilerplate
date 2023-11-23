@@ -1,0 +1,17 @@
+{
+  "name": "askers",
+  "private": true,
+  "scripts": {
+    "dev": "meteor run --port=2000"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "antd": "^4.24.15",
+    "btaskee-ui-be": "^1.0.17",
+    "meteor-node-stubs": "^1.2.1",
+    "otorio-components": "0.0.9",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "styled-components": "^5.3.0"
+  }
+}
