@@ -1,0 +1,77 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "types": ["node"],
+    "typeRoots": ["./.npm/package/node_modules/@types"],
+    "paths": {
+      "meteor/universe:i18n": ["node_modules/@types/meteor-universe-i18n"],
+      "meteor/xolvio:cleaner": ["meteor-xolvio-cleaner.d.ts"],
+      "meteor/dburles:factory": ["meteor-dburles-factory.d.ts"],
+      "components/*": ["imports/ui/components/*"],
+      "pages/*": ["imports/ui/pages/*"],
+      "component-base/*": ["imports/ui/base/*"],
+      "utils/*": ["imports/utils/*"],
+      "modules/*": ["imports/ui/modules/*"],
+      "modules": ["imports/ui/modules"],
+      "hooks/*": ["imports/ui/hooks/*"],
+      "TaskCollectionUI": ["imports/ui/TaskCollection"],
+      "collections": ["imports/startup/server/collections/index.ts"],
+      "api-services/*": ["imports/api-services/*"],
+      "api-services": ["imports/api-services"],
+      "utils-api": ["imports/utils/api"],
+      "constants-global/*": ["imports/typescripts/constants/*"],
+      "utils-global/*": ["imports/typescripts/utils/*"],
+      "types-root/*": ["imports/types/*"],
+      "startup/*": ["imports/startup/*"],
+      "moments": ["imports/utils/moments"],
+      "constants-root/*": ["imports/constants/*"],
+      "unit-tests/*": ["imports/test/unit/*"],
+      "enzyme-adapter": ["imports/test/enzyme-adapter.ts"],
+      "AppProvider/*": ["imports/test/AppProvider/*"],
+      "layouts/*": ["imports/ui/layouts/*"],
+      "api/*": ["imports/api/*"],
+      "mock-data/*": ["imports/test/mock-data/*"],
+      "tasker-detail/*": ["imports/ui/components/v2/tasker-detail/*"],
+      "notification-message": ["imports/ui/notification-message/getMessage.js"],
+      "Provider/*": ["imports/ui/Provider/*"],
+      "test-ui-helpers/*": ["imports/test/unit/ui/helpers/*"],
+      "btaskee-modules/*": ["imports/modules/*"]
+    },
+    "resolveJsonModule": true,
+    "preserveSymlinks": true,
+
+    "target": "es2018",
+    "module": "esNext",
+    "lib": ["esnext", "dom"],
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "react",
+    "incremental": true,
+    "noEmit": true,
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "./.meteor/**",
+    "./packages/**"
+  ],
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx",
+    "imports/api-services/index.ts",
+    "imports/api/askers/getTaskNoteByService.Tts"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "entryPoints": ["imports"],
+  "entryPointStrategy": "expand",
+  "out": "docs",
+  "externalPattern": ["**/node_modules/**"],
+  "exclude": ["**/node_modules/**", "**/*.js"]
+}

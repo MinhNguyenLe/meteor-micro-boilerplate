@@ -1,0 +1,68 @@
+{
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "lib",
+        "style": true // or 'css'
+      }
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./imports"],
+        "alias": {
+          "pages": "./imports/ui/pages",
+          "components": "./imports/ui/components",
+          "ui/constants": "./imports/ui/constants",
+          "utils": "./imports/utils",
+          "modules": "./imports/ui/modules",
+          "api": "./imports/api",
+          "tasker-detail": "./imports/ui/components/v2/tasker-detail",
+          "api-services": "./imports/api-services",
+          "collections": "./imports/startup/server/collections",
+          "constants": "./imports/constants",
+          "utils-api": "./imports/utils/api",
+          "utils-ui": "./imports/utils/ui",
+          "moments": "./imports/utils/moments",
+          "hooks": "./imports/ui/hooks",
+          "component-base": "./imports/ui/base",
+          "constants-global": "./imports/typescripts/constants",
+          "utils-global": "./imports/typescripts/utils",
+          "types-root": "./imports/types",
+          "startup": "./imports/startup",
+          "constants-root": "./imports/constants",
+          "unit-tests": "./imports/test/unit",
+          "enzyme-adapter": "./imports/test/enzyme-adapter.ts",
+          "AppProvider": "./imports/test/AppProvider",
+          "layouts": "./imports/ui/layouts",
+          "mock-data": "./imports/test/mock-data",
+          "notification-message": "./imports/ui/notification-message/getMessage.js",
+          "TaskCollectionUI": "./imports/ui/TaskCollection",
+          "Provider": "./imports/ui/Provider",
+          "test-ui-helpers": "./imports/test/unit/ui/helpers",
+          "btaskee-modules": "./imports/modules"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "COVERAGE": {
+      "plugins": ["istanbul"]
+    }
+  },
+  "sourceType": "unambiguous",
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "chrome": 100
+        }
+      }
+    ],
+    "@babel/preset-typescript",
+    "@babel/preset-react"
+  ]
+}

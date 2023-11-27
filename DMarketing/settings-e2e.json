@@ -1,0 +1,96 @@
+{
+  "MAIL_URL": "smtp://halle.lynch3@ethereal.email:bgqYHruCpkEuMPfysz@ethereal.email",
+  "MAIL_FROM": "theEmail@gmail.com",
+  "REMOTE_MONGO_URL": "mongodb://localhost:27017/e2e-app",
+  "OPLOG_REMOTE_MONGO": "mongodb://oplogUser:xSefdjEpllzNtFIE@cluster0-shard-00-00-zlhwd.gcp.mongodb.net:27017, cluster0-shard-00-01-zlhwd.gcp.mongodb.net:27017, cluster0-shard-00-02-zlhwd.gcp.mongodb.net:27017/local?authSource=admin&replicaSet=Cluster0-shard-0&ssl=true",
+  "Stringee": {
+    "apiKeySid": "",
+    "apiKeySecret": ""
+  },
+  "API_SERVER": "http://localhost:8080/api",
+  "GOOGLE_API_KEY": "",
+  "GOOGLE_MAP_URL": "https://maps.googleapis.com/maps/api/place",
+  "API_KEY": "06rj6r5C1xEy4aaEumzu0e3ON4FClYnu",
+  "AWS_ACCESS_KEY_ID": "AKIAIDHBPOWNACNC4YGA",
+  "AWS_SECRET_KEY": "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",
+  "AWS_BUCKET": "toanphambucket",
+  "HOT_LINE": "1900.636.736",
+  "EMAIL": {
+    "mailGunAPIUrl": "dumpkey",
+    "mailGunAPIKey": "dumpkey",
+    "RECEIPT_SUBS_MAIL_BCC": "xnguyen9a10@gmail.com",
+    "RECEIPT_SUBS_MAIL_FROM": "gummet.97@gmail.com",
+    "RENEW_SUBS_MAIL_BCC": "xnguyen9a10@gmail.com",
+    "RENEW_SUBS_MAIL_FROM": "gummet.97@gmail.com",
+    "REPLY_TO": "xnguyen9a10@gmail.com",
+    "OUTSTANDING_DEBS_FROM": "xnguyen9a10@gmail.com",
+    "OUTSTANDING_DEBS_TO": "xnguyen9a10@gmail.com",
+    "ALERT_TO": "xnguyen9a10@gmail.com",
+    "ALERT_FROM": "xnguyen9a10@gmail.com"
+  },
+  "SLACK_POST": {
+    "API_URL": "https://slack.com/api/chat.postMessage",
+    "TOKEN": "dumpkey",
+    "UNUSUAL_ACCESSING": "random",
+    "LOGIN_TRACKING_URL": ""
+  },
+  "DEFAULT_TIMEZONE": "Asia/Ho_Chi_Minh",
+  "public": {
+    "MODE": "dev",
+    "SESSION_INACTIVITY_TIMEOUT": 10000,
+    "SESSION_INTERVAL": 1000,
+    "SESSION_ACTIVITY_EVENT": "mousemove click keydown",
+    "DEFAULT_TIMEZONE": "Asia/Ho_Chi_Minh",
+    "SENTRY": {
+      "DSN": "https://e2e260ab096f410e88c59c39c9ab3d9f@o572903.ingest.sentry.io/5722877"
+    }
+  },
+  "SERVICES_REWARD_IDS": [
+    "pcZRQ6PqmjrAPe5gt",
+    "xTgw3s7tdpJa4JNJj",
+    "6ykggf82yuLtkT8GC",
+    "QGvwmm8Kp45rywZCw",
+    "4eazwGY2hD6fJJAFr"
+  ],
+  "LOW_BALANCE": {
+    "TH": 150,
+    "VN": 100000
+  },
+  "NUMBER_ONBOARDING_TASK": 20,
+  "LOGGLY": {
+    "TOKEN": "dump",
+    "SUBDOMAIN": "dump",
+    "LEVEL": "error",
+    "TAG": "meteor-new-backend"
+  },
+  "GROCERY": {
+    "AWS_ACCESS_KEY_ID": "AKIAIDHBPOWNACNC4YGA",
+    "AWS_SECRET_KEY": "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",
+    "AWS_BUCKET": "toanphambucket",
+    "PRODUCT_IMAGE_SIZE": 262144
+  },
+  "LOW_RATING": {
+    "TASK": {
+      "VN": 4.4,
+      "TH": 4.0
+    },
+    "TASKER": {
+      "VN": 4.4,
+      "TH": 4.0
+    },
+    "WARING_TASKER": {
+      "VN": 4.7,
+      "TH": 4.7
+    }
+  },
+  "ANALYSIS": {
+    "TASKER_OPEN_APP": {
+      "TOKEN": "1873dd24-71fd-43cc-b919-e48b5657aea7",
+      "LOGGLY_URL": "https://nguyen.loggly.com/"
+    },
+    "TASK_VIEWED_TASKER": {
+      "TOKEN": "",
+      "LOGGLY_URL": ""
+    }
+  }
+}

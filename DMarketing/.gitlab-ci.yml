@@ -1,0 +1,42 @@
+image: geoffreybooth/meteor-base:2.5.6
+
+services:
+  - mongo:4.4.12
+
+variables:
+  METEOR_ALLOW_SUPERUSER: 1
+  GIT_SSL_NO_VERIFY: 'true'
+
+before_script:
+  - meteor npm install
+
+stages:
+  - code standard
+  - test
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
+Typescript checker:
+  stage: code standard
+  script:
+    - meteor npm run docs
+
+Lint:
+  stage: code standard
+  script:
+    - meteor npm run lint-ts
+
+Spell checker:
+  stage: code standard
+  script:
+    - meteor npm run cspell
+
+Unit testing:
+  stage: test
+  script:
+    - meteor npm run coverage:ci
+    - cat .coverage/summary.txt
+  coverage: /^Statements\s*:\s*([^%]+)/
+

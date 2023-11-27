@@ -1,0 +1,102 @@
+{
+  "MAIL_URL": "smtp://halle.lynch3@ethereal.email:bgqYHruCpkEuMPfysz@ethereal.email",
+  "MAIL_FROM": "theEmail@gmail.com",
+  "REMOTE_MONGO_URL": "mongodb://127.0.0.1:27017/meteor",
+  "OPLOG_REMOTE_MONGO": "mongodb://127.0.0.1:27017/local",
+  "Stringee": {
+    "apiKeySid": "",
+    "apiKeySecret": ""
+  },
+  "API_SERVER": "http://localhost:8080/api",
+  "GOOGLE_API_KEY": "",
+  "GOOGLE_MAP_URL": "https://maps.googleapis.com/maps/api/place",
+  "API_KEY": "dumpkey",
+  "AWS_ACCESS_KEY_ID": "dumpkey",
+  "AWS_SECRET_KEY": "dumpkey",
+  "AWS_BUCKET": "dumpkey",
+  "HOT_LINE": "1900.636.736",
+  "EMAIL": {
+    "mailGunAPIUrl": "dumpkey",
+    "mailGunAPIKey": "dumpkey",
+    "RECEIPT_SUBS_MAIL_BCC": "xnguyen9a10@gmail.com",
+    "RECEIPT_SUBS_MAIL_FROM": "gummet.97@gmail.com",
+    "RENEW_SUBS_MAIL_BCC": "xnguyen9a10@gmail.com",
+    "RENEW_SUBS_MAIL_FROM": "gummet.97@gmail.com",
+    "REPLY_TO": "xnguyen9a10@gmail.com",
+    "OUTSTANDING_DEBS_FROM": "xnguyen9a10@gmail.com",
+    "OUTSTANDING_DEBS_TO": "xnguyen9a10@gmail.com",
+    "ALERT_TO": "xnguyen9a10@gmail.com",
+    "ALERT_FROM": "xnguyen9a10@gmail.com"
+  },
+  "SLACK_POST": {
+    "API_URL": "https://slack.com/api/chat.postMessage",
+    "TOKEN": "dumpkey",
+    "UNUSUAL_ACCESSING": "random",
+    "LOGIN_TRACKING_URL": ""
+  },
+  "DEFAULT_TIMEZONE": "Asia/Ho_Chi_Minh",
+  "public": {
+    "MODE": "dev",
+    "SESSION_INACTIVITY_TIMEOUT": 10000,
+    "SESSION_INTERVAL": 1000,
+    "SESSION_ACTIVITY_EVENT": "mousemove click keydown",
+    "DEFAULT_TIMEZONE": "Asia/Ho_Chi_Minh",
+    "SENTRY":{
+      "DSN":"https://e2e260ab096f410e88c59c39c9ab3d9f@o572903.ingest.sentry.io/5722877"
+    }
+  },
+  "SERVICES_REWARD_IDS": ["pcZRQ6PqmjrAPe5gt", "xTgw3s7tdpJa4JNJj", "6ykggf82yuLtkT8GC", "QGvwmm8Kp45rywZCw", "4eazwGY2hD6fJJAFr"],
+  "LOW_BALANCE": {
+    "TH": 150,
+    "VN": 100000
+  },
+  "LOGGLY": {
+    "TOKEN": "",
+    "SUBDOMAIN": "dump",
+    "LEVEL": "error",
+    "TAG": "meteor-new-backend"
+  },
+  "ANALYSIS": {
+    "TASKER_OPEN_APP":  {
+      "TOKEN": "1873dd24-71fd-43cc-b919-e48b5657aea7",
+      "LOGGLY_URL": "https://nguyen.loggly.com/"
+    },
+    "TASK_VIEWED_TASKER": {
+      "TOKEN": "",
+      "LOGGLY_URL": ""
+    }
+  },
+  "LIMIT_DEBT_BPAY": {
+    "VN": -200000,
+    "TH": -30
+  },
+  "NUMBER_ONBOARDING_TASK": 20,
+  "LOW_RATING" : {
+    "TASK": {
+      "VN": 4.4,
+      "TH": 4.0
+    },
+    "TASKER": {
+      "VN": 4.4,
+      "TH": 4.0
+    }
+  },
+  "GROCERY": {
+    "AWS_ACCESS_KEY_ID": "dumb",
+    "AWS_SECRET_KEY": "dumb",
+    "AWS_BUCKET": "dumb",
+    "PRODUCT_IMAGE_SIZE": 262144
+  },
+  "MAX_OFFER_VALUE": {
+    "TH": 10000,
+    "VN": 10000
+  },
+  "MAX_COMPESATION_VALUE": {
+    "TH": 200,
+    "VN": 200000
+  },
+  "CLEVER_TAP" : {
+    "ACCOUNT_ID": "",
+    "PASS_CODE": ""
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "trailingComma": "es5",
+  "singleQuote": true,
+  "organizeImportsSkipDestructiveCodeActions": true,
+  "overrides": [
+    {
+      "files": ["**/*.cy.ts"],
+      "options": {
+        "tabWidth": 2,
+        "printWidth": 120,
+        "singleQuote": false
+      }
+    },
+    {
+      "files": ["globals.d.ts"],
+      "options": {
+        "tabWidth": 4,
+        "printWidth": 120
+      }
+    }
+  ]
+}

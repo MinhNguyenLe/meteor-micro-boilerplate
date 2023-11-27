@@ -1,7 +1,8 @@
 // @ts-nocheck
 import React from "react";
 import { DDP } from "meteor/ddp-client";
-import { BaseTable } from "btaskee-ui-be";
+// import { BaseTable } from "btaskee-ui-be";
+// import {GlobalStyle} from "@bbepacks/components-base";
 
 // const serviceConnection = DDP.connect('http://localhost:4000');
 const authConnection = DDP.connect("http://localhost:3000");
@@ -36,11 +37,11 @@ const App = () => {
       "From client Askers",
       Accounts.userId(),
       " --- ",
-      Meteor.userId()
+      Meteor.userId(),"???? ",
     );
   };
   const logout = () => {
-    Meteor.logout();
+    Accounts.logout();
   };
 
   const dataSource = [
@@ -77,6 +78,8 @@ const App = () => {
   ];
 
   return (
+    <>
+    {/* <GlobalStyle/> */}
     <div>
       I am Askers!
       <button onClick={fetchDemo}>Test fetching another server</button>
@@ -85,8 +88,9 @@ const App = () => {
       <button onClick={login}>Sign in</button>
       <button onClick={checkLoggedIn}>Check logged in ?</button>
       <button onClick={logout}>Log out</button>
-      <BaseTable dataSource={dataSource} columns={columns} />
+      {/* <BaseTable dataSource={dataSource} columns={columns} /> */}
     </div>
+    </>
   );
 };
 export default App;

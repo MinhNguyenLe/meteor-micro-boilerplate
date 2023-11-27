@@ -1,0 +1,87 @@
+{
+  "REMOTE_MONGO_URL": "mongodb://mongo:27017/meteor-testing",
+  "MAIL_URL": "smtp://halle.lynch3@ethereal.email:bgqYHruCpkEuMPfysz@ethereal.email",
+  "MAIL_FROM": "gummet.97@gmail.com",
+  "API_SERVER": "http://localhost:8080/api",
+  "API_KEY": "dumpkey",
+  "GOOGLE_API_KEY": "",
+  "GOOGLE_MAP_URL": "https://maps.googleapis.com/maps/api/place",
+  "AWS_ACCESS_KEY_ID": "dumpkey",
+  "AWS_SECRET_KEY": "dumpkey",
+  "AWS_BUCKET": "dumpkey",
+  "SLACK_POST": {
+    "API_URL": "https://slack.com/api/chat.postMessage",
+    "TOKEN": "xoxb-1501805057668-1519732640848-WN8OLgNdAXXhuhC0m6Q0sUfM",
+    "UNUSUAL_ACCESSING": "random",
+    "LOGIN_TRACKING_URL": ""
+  },
+  "public": {
+    "MODE": "dev",
+    "DEFAULT_TIMEZONE": "Asia/Ho_Chi_Minh",
+    "SESSION_INACTIVITY_TIMEOUT": 1000000000,
+    "SESSION_INTERVAL": 1000,
+    "SESSION_ACTIVITY_EVENT": "mousemove click keydown",
+    "SENTRY":{
+      "DSN":"https://e2e260ab096f410e88c59c39c9ab3d9f@o572903.ingest.sentry.io/5722877"
+    }
+  },
+  "HOT_LINE": "1900.636.736",
+  "EMAIL": {
+    "mailGunAPIUrl": "",
+    "mailGunAPIKey": "",
+    "RECEIPT_SUBS_MAIL_BCC": "xnguyen9a10@gmail.com",
+    "RECEIPT_SUBS_MAIL_FROM": "gummet.97@gmail.com",
+    "RENEW_SUBS_MAIL_BCC": "xnguyen9a10@gmail.com",
+    "RENEW_SUBS_MAIL_FROM": "gummet.97@gmail.com",
+    "REPLY_TO": "xnguyen9a10@gmail.com",
+    "OUTSTANDING_DEBS_FROM": "xnguyen9a10@gmail.com",
+    "OUTSTANDING_DEBS_TO": "xnguyen9a10@gmail.com",
+    "ALERT_TO": "xnguyen9a10@gmail.com",
+    "ALERT_FROM": "xnguyen9a10@gmail.com"
+  },
+  "LOW_BALANCE": {
+    "TH": 150,
+    "VN": 100000
+  },
+  "NUMBER_ONBOARDING_TASK": 20,
+  "LOGGLY": {
+    "TOKEN": "285ff781-d981-49a9-9c37-75cee88f55c6",
+    "SUBDOMAIN": "nguyen",
+    "LEVEL": "error",
+    "TAG": "meteor-new-backend"
+  },
+  "LOW_RATING" : {
+    "TASK": {
+      "VN": 4.4,
+      "TH": 4.0
+    },
+    "TASKER": {
+      "VN": 4.4,
+      "TH": 4.0
+    }
+  },
+  "GROCERY": {
+    "AWS_ACCESS_KEY_ID": "dumb",
+    "AWS_SECRET_KEY": "dumb",
+    "AWS_BUCKET": "dumb",
+    "PRODUCT_IMAGE_SIZE": 262144
+  },
+  "MAX_OFFER_VALUE": {
+    "TH": 10000,
+    "VN": 10000
+  },
+  "MAX_COMPESATION_VALUE": {
+    "TH": 200,
+    "VN": 200000
+  },
+  "CLEVER_TAP" : {
+    "ACCOUNT_ID": "",
+    "PASS_CODE": ""
+  },
+  "ANALYSIS": {
+    "TASKER_OPEN_APP": {
+      "LOGGLY_URL": "url",
+      "TOKEN": "token"
+    }
+  }
+}

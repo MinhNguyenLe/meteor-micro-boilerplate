@@ -1,0 +1,165 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "meteor": true,
+    "mocha": true
+  },
+  "extends": [
+    "plugin:meteor/recommended",
+    "prettier",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:storybook/recommended"
+  ],
+  "globals": {
+    "T": true,
+    "StringeeSoftPhone": "readonly",
+    "i18n": true,
+    "Migrations": true,
+    "Slingshot": true,
+    "SyncedCron": true
+  },
+  "settings": {
+    "import/resolver": {
+      "meteor": {},
+      "node": {
+        "paths": ["."],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      },
+      "babel-module": {
+        "alias": {
+          "pages": "./imports/ui/pages",
+          "components": "./imports/ui/components",
+          "ui/constants": "./imports/ui/constants",
+          "utils": "./imports/utils",
+          "modules": "./imports/ui/modules",
+          "api": "./imports/api",
+          "tasker-detail": "./imports/ui/components/v2/tasker-detail",
+          "api-services": "./imports/api-services",
+          "collections": "./imports/startup/server/collections",
+          "constants": "./imports/constants",
+          "utils-api": "./imports/utils/api",
+          "utils-ui": "./imports/utils/ui",
+          "moments": "./imports/utils/moments",
+          "layouts": "./imports/ui/layouts",
+          "types-root": "./imports/types",
+          "startup": "./imports/startup",
+          "constants-root": "./imports/constants",
+          "unit-tests": "./imports/test/unit",
+          "enzyme-adapter": "./imports/test/enzyme-adapter.ts",
+          "AppProvider": "./imports/test/AppProvider",
+          "mock-data": "./imports/test/mock-data",
+          "notification-message": "./imports/ui/notification-message/getMessage.js",
+          "TaskCollectionUI": "./imports/ui/TaskCollection",
+          "Provider": "./imports/ui/Provider",
+          "utils-global": "./imports/typescripts/utils",
+          "btaskee-modules": "./imports/modules"
+        }
+      }
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "meteor",
+    "prettier",
+    "react",
+    "@typescript-eslint",
+    "unused-imports",
+    "btaskee"
+  ],
+  "rules": {
+    "btaskee/import-by-root-dir": 1,
+    "btaskee/import-full-path": 1,
+    "btaskee/mocha-reject-arrow-function": 1,
+    "btaskee/mocha-async-need-to-done": 1,
+    "btaskee/catch-must-be-handle": 1,
+    "allowEmptyReject": 0,
+    "import/no-absolute-path": 0,
+    "no-console": 2,
+    "no-case-declarations": 0,
+    "react/require-default-props": 0,
+    "react/destructuring-assignment": 0,
+    "react/jsx-no-undef": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "import/no-unresolved": "off",
+    "react/prop-types": 0,
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allow": ["_id", "_checkPassword", "__"]
+      }
+    ],
+    "object-shorthand": [
+      "error",
+      "always",
+      {
+        "avoidQuotes": false
+      }
+    ],
+    "no-undef": 2,
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "prettier/prettier": "error",
+    "comma-dangle": 0,
+    "operator-linebreak": 0,
+    "implicit-arrow-linebreak": 0,
+    "object-curly-newline": 0,
+    "no-confusing-arrow": 0,
+    "react/jsx-curly-newline": 0,
+    "function-paren-newline": 0,
+    "no-use-before-define": 0,
+    "no-shadow": 0,
+    "react/jsx-wrap-multilines": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": 0,
+    "@typescript-eslint/no-unused-vars": 0
+  },
+  "overrides": [
+    {
+      "files": ["**/*.ts"],
+      "rules": {
+        "import/prefer-default-export": 0
+      }
+    },
+    {
+      "files": ["imports/ui/pages/v2/Notification/index.tsx"],
+      "rules": {
+        "react/no-array-index-key": 0,
+        "no-undef": 0
+      }
+    },
+    {
+      "files": ["imports/startup/server/collections.js"],
+      "rules": {
+        "camelcase": 0
+      }
+    }
+  ]
+}
